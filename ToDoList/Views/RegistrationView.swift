@@ -21,10 +21,17 @@ struct RegistrationView: View {
             Form {
                 TextField("Full Name", text: $fullName)
                     .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled()
                 TextField("Email Address", text: $email)
                     .textFieldStyle(DefaultTextFieldStyle())
+                    .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                    .autocorrectionDisabled()
+                
                 SecureField("Password", text: $password)
                     .textFieldStyle(DefaultTextFieldStyle())
+                TextButton(title: "Create Account ", background: Color.green) {
+                    // log in action
+                }
             }
         }
     }

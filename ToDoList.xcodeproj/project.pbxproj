@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F079B972BE5E978004C3860 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F079B962BE5E978004C3860 /* HeaderView.swift */; };
+		1F079B992BE7B8B1004C3860 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F079B982BE7B8B1004C3860 /* TextButton.swift */; };
 		1F4F30E42BE1C98600DEBF66 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F30E32BE1C98600DEBF66 /* ToDoListApp.swift */; };
 		1F4F30E62BE1C98600DEBF66 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F30E52BE1C98600DEBF66 /* MainView.swift */; };
 		1F4F30E82BE1C98A00DEBF66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4F30E72BE1C98A00DEBF66 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		1F079B962BE5E978004C3860 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		1F079B982BE7B8B1004C3860 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		1F4F30E02BE1C98600DEBF66 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4F30E32BE1C98600DEBF66 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		1F4F30E52BE1C98600DEBF66 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				1F4F31242BE5D48300DEBF66 /* RegistrationView.swift */,
 				1F4F31262BE5D4C300DEBF66 /* TodoListItemView.swift */,
 				1F079B962BE5E978004C3860 /* HeaderView.swift */,
+				1F079B982BE7B8B1004C3860 /* TextButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				1F4F31232BE5D46B00DEBF66 /* LoginView.swift in Sources */,
 				1F4F30E62BE1C98600DEBF66 /* MainView.swift in Sources */,
 				1F4F312D2BE5D62000DEBF66 /* MainViewVM.swift in Sources */,
+				1F079B992BE7B8B1004C3860 /* TextButton.swift in Sources */,
 				1F4F311F2BE5D43800DEBF66 /* TodoListView.swift in Sources */,
 				1F4F312F2BE5D63500DEBF66 /* ProfileViewVM.swift in Sources */,
 				1F4F31252BE5D48300DEBF66 /* RegistrationView.swift in Sources */,
