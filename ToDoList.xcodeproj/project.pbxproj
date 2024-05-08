@@ -113,6 +113,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F079B9A2BEBBA82004C3860 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				1F079B9B2BEBBA96004C3860 /* Features */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		1F079B9B2BEBBA96004C3860 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1F079B9C2BEBBAB2004C3860 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1F079B9C2BEBBAB2004C3860 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1F4F31182BE1CF7400DEBF66 /* Views */,
+				1F4F31192BE1CF7F00DEBF66 /* ViewModels */,
+				1F4F311A2BE1CF9A00DEBF66 /* Models */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		1F4F30D72BE1C98600DEBF66 = {
 			isa = PBXGroup;
 			children = (
@@ -136,10 +162,8 @@
 		1F4F30E22BE1C98600DEBF66 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				1F079B9A2BEBBA82004C3860 /* Code */,
 				1F4F311B2BE1CFAE00DEBF66 /* Other */,
-				1F4F311A2BE1CF9A00DEBF66 /* Models */,
-				1F4F31192BE1CF7F00DEBF66 /* ViewModels */,
-				1F4F31182BE1CF7400DEBF66 /* Views */,
 				1F4F30E92BE1C98A00DEBF66 /* Preview Content */,
 			);
 			path = ToDoList;
