@@ -15,7 +15,7 @@ struct MainView: View {
         
         if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
             // signed in
-            TodoListView()
+            HomeView()
         } else {
             NavigationView {
                 LoginView()
