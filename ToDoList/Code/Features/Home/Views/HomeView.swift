@@ -24,11 +24,14 @@ struct HomeView: View {
                     .navigationTitle("todo list")
                     .toolbar{
                         Button {
-                            // action
+                            viewModel.showingView = true
                         } label: {
                             Image(systemName: "plus")
                         }
                     }
+                    .sheet(isPresented: $viewModel.showingView, onDismiss: nil, content: {
+                            NewItemView()
+                    })
             }
             .tabItem {
                 Label("Home", systemImage: "house")

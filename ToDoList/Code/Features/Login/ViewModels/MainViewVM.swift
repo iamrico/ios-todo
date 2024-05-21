@@ -10,6 +10,9 @@ import Foundation
 
 class MainViewViewModel: ObservableObject {
     @Published var currentUserId: String = ""
+    
+    @Published var showingView = false
+    
     private var handler: AuthStateDidChangeListenerHandle?
     
     init() {
