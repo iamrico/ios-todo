@@ -30,7 +30,7 @@ struct HomeView: View {
                         }
                     }
                     .sheet(isPresented: $viewModel.showingView, onDismiss: nil, content: {
-                            NewItemView()
+                        NewItemView(newItemPresented: $viewModel.showingView)
                     })
             }
             .tabItem {
