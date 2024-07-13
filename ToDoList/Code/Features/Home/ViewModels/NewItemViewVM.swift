@@ -32,6 +32,10 @@ class NewItemViewViewModel: ObservableObject {
         db.collection("users").document(uId).collection("todos").document(newId).setData(newItem.asDictionary())
     }
     
+    func updateTitle(to title: String) {
+        self.title = title
+    }
+    
     var canSave: Bool {
         guard !title.trimmingCharacters(in: .whitespaces).isEmpty else {
             return false
