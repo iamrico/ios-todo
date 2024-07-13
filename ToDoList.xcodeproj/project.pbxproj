@@ -213,6 +213,7 @@
 		1F3D361D2BEF3FE200FEB9A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1F4F312A2BE5D5E800DEBF66 /* TodoListItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,7 +298,6 @@
 		1F4F311A2BE1CF9A00DEBF66 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1F4F312A2BE5D5E800DEBF66 /* TodoListItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
