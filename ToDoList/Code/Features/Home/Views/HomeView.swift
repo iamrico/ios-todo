@@ -39,7 +39,7 @@ struct HomeView: View {
             
             NavigationView {
                 ProfileView()
-                    .navigationTitle("bitch")
+                    .navigationTitle("Profile")
             }
             .tabItem {
                     Label("Profile", systemImage: "person.circle")

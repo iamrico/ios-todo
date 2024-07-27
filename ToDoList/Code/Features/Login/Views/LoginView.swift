@@ -14,8 +14,6 @@ struct LoginView: View {
         NavigationView {
             VStack {
                 HeaderView(title: "TODO LIST", subtitle: "SKIBIDI", angle: 12, backgroundColor: .pink)
-                // Login Form
-                
                 Form {
                     
                     if !viewModel.errorMessage.isEmpty {
@@ -29,7 +27,6 @@ struct LoginView: View {
                         .textFieldStyle(DefaultTextFieldStyle())
                     
                     TextButton(title: "Log In", background: Color.blue) {
-                        // log in action
                         viewModel.login()
                     }
 
@@ -40,10 +37,16 @@ struct LoginView: View {
                 VStack {
                     Text("New around here?")
                     NavigationLink("Create an Account", destination: RegistrationView())
-                }
-//                .padding(.bottom, 50)
-                
+                }                
                 Spacer()
+            }
+        }
+        
+        .onAppear {
+            guard let data = viewModel.getData(service: "rico-todo-list", account: "jerichomesina02@gmail.com")
+            else {
+                print("failed to read password")
+                return
             }
         }
 

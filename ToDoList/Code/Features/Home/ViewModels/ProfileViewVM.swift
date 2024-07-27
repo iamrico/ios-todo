@@ -6,8 +6,17 @@
 //
 
 import Foundation
-
+import FirebaseAuth
+import FirebaseFirestore
 
 class ProfileViewViewModel: ObservableObject {
     init() {}
+    
+    func logout() {
+        do {
+            try Auth.auth().signOut()
+        } catch  {
+            print(error)
+        }
+    }
 }

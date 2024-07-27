@@ -24,6 +24,7 @@ struct TextButton: View {
                 Text(title).bold().foregroundColor(Color.white)
             }
         }
+        .frame(height: 50)
         .padding()
     }
 }

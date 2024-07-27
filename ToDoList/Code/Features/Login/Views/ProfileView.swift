@@ -11,7 +11,9 @@ struct ProfileView: View {
     @StateObject var viewModel = ProfileViewViewModel()
     
     var body: some View {
-        Text("hello world")
+        TextButton(title: "Logout", background: Color.red, action: {
+            viewModel.logout()
+        })
     }
 }
 
