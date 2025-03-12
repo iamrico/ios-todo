@@ -69,6 +69,7 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         build-mode: manual
+        tools: https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.20.3/codeql-bundle-osx64.tar.gz
         # If you wish to specify custom queries, you can do so here or in a config file.
         # By default, queries listed here will override any specified in a config file.
         # Prefix the list here with "+" to use these queries and those in the config file.
@@ -82,11 +83,15 @@ jobs:
     # to build your code.
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
+
+    - name: Prepare for Manual Build
+      if: matrix.build-mode == 'manual'
+      uses: ./.github/actions/prepare_for_build
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-        echo '  xcodebuild -list -project ToDoList.xcodeproj/'
-        echo '  xcodebuild -workspace project.xcworkspace -scheme ToDoList build'
+        xcodebuild -list -project ToDoList.xcodeproj/'
+        xcodebuild -workspace project.xcworkspace -scheme ToDoList build'
     
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
