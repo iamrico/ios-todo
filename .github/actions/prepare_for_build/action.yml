@@ -1,0 +1,9 @@
+name: 'Prepare for Build'
+description: "Select tool versions and install dependencies"
+runs:
+  using: 'composite'
+  steps:
+  - name: 🏗 Setup Xcode
+    uses: maxim-lobanov/setup-xcode@v1
+    with:
+      xcode-version: '15.4'
