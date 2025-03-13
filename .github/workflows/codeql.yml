@@ -92,7 +92,7 @@ jobs:
       shell: bash
       run: |
         xcodebuild -list -project ToDoList.xcodeproj/
-        xcodebuild -workspace project.xcworkspace -scheme ToDoList build
+        xcodebuild -project ToDoList.xcodeproj -scheme ToDoList -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.5'
     
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
