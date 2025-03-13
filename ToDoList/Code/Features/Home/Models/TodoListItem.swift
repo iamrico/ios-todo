@@ -15,6 +15,7 @@ struct TodoListItem: Codable, Identifiable {
     let createdDate: TimeInterval
     
     var isDone: Bool
+    var rizz: String = "Rizz"
     
     mutating func setDone(_ state: Bool) {
         isDone = state
